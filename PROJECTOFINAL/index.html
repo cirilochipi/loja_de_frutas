@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Loja de Frutas Online</title>
+        <link rel="icon" href="./img/icon/fruits_96835-1.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <link rel="stylesheet" href="./flexbox.css">
+        <link rel="stylesheet" href="./e_commerce.css">
+    </head>
+    <!--CORPO DA PÁGINA-->
+    <body>
+        <!--MENU PRINCIPAL-->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+                <div class="container-fluid">
+                     <a class="navbar-brand" href="#"><img src="./img/icon/fruits_96835.png"> Frutas Online</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Página Inicial</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#nossopomar">Nosso Pomar</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Serviços</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#entrega">Entregas ao Domicílio</a></li>
+                                    <li><a class="dropdown-item" href="#arvore">Arborização</a></li>
+                                    <li><a class="dropdown-item" href="#jardim">Jardinagem</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contactos">Contactos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#sobrenos">Sobre Nós</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Pesquise pela fruta" aria-label="Pesquisar">
+                            <button class="btn btn-outline-light" type="submit">Pesquisar</button>
+                        </form>
+                        <hr>
+                        <button class="btn btn-primary" type="submit"><a class="nav-link" href="registocliente.html">Registe-se</a></button>
+                    </div>             
+                </div>
+            </nav>
+        </header>
+    <!-- CAROUSEL DE FRUTAS -->
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/carousel1.jpg" class="d-block w-100" alt="imagem">
+            <div class="carousel-caption d-none d-md-block">
+                <h1 class="text-white"> A Qualidade ao Seu Alcance </h1>
+                <p class="lead text-white text-uppercase fst-italic fw-bold"> Dispomos de uma gama de variedade de frutas de qualidade e nacional. </p>
+            </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/carousel2.jpg" class="d-block w-100" alt="imagem">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="text-white">Encomende as Melhores Frutas</h1>
+                    <p class="lead text-white text-uppercase fst-italic fw-bold"> Temos para si, serviços de entrega ao domícilio a qualquer momento! </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/carousel3.jpg" class="d-block w-100" alt="imagem">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="text-white">O Melhor da Natureza em  Sua Casa</h1>
+                    <p class="lead text-white text-uppercase fst-italic fw-bold"> A sua Loja de Frutas Online oferece a si o melhor da natureza. </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/carousel4.jpg" class="d-block w-100" alt="imagem">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="text-white">Frutas Frescas Para Todos</h1>
+                    <p class="lead text-white text-uppercase fst-italic fw-bold"> A Boa Conservação das frutas é nossa especialidade e garantia. </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/carousel5.jpg" class="d-block w-100" alt="imagem">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="text-whitw">Prove as Nossas Maçãs Suculentas</h1>
+                    <p class="lead text-white text-uppercase fst-italic fw-bold"> Temos as melhores maçãs para diversos fins e conforme o seu gosto. </p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+    </div>
+    <!-- CARDS DAS FRUTAS-->
+            <hr class="hr">
+                <h1 class="text-center display-4 fw-medium text-success-emphasis">Nosso Pomar</h1>
+            <hr class="hr">
+    <main>
+        <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;">
+            <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+                <div class="col"> 
+                    <div class="card h-100 shadow-sm"> 
+                        <img src="./img/frutas/manga1.jpg" class="card-img-top" alt="..."> 
+                            <div class="label-top shadow-sm">Kg</div>
+                            <div class="card-body"> 
+                                <div class="clearfix mb-3"> 
+                                    <span class="float-start badge rounded-pill bg-primary">Manga</span> 
+                                    <span class="float-end price-hp">Kz: 1250.00</span> 
+                                </div> 
+                                <h5 class="card-title text-info">Origem: Ásia (Índia e Filipinas)<br>Temperatura ambiente: 20 a 29º C</h5> 
+                                <div class="text-center my-4"> 
+                                    <a href="#" class="btnn btnn-warning">Comprar</a> 
+                                </div>
+                                <div class="clearfix mb-1"> 
+                                    <span class="float-end">
+                                    <a href="info.html" class="small text-info text-decoration-none">Saiba +</a>
+                                    </span>
+                                    <span class="float-start">
+                                        <p class="small text-muted">Embalado: 10-01-23</p>
+                                    </span> 
+                                </div>  
+                            </div> 
+                    </div> 
+                </div>
+                <div class="col"> 
+                    <div class="card h-100 shadow-sm"> 
+                        <img src="./img/frutas/kiwi1.jpg" class="card-img-top" alt="..."> 
+                            <div class="label-top shadow-sm">Kg</div>
+                            <div class="card-body"> 
+                                <div class="clearfix mb-3"> 
+                                    <span class="float-start badge rounded-pill bg-primary">Kiwi Fruit</span> 
+                                    <span class="float-end price-hp">Kz: 1800.00</span> 
+                                </div> 
+                                <h5 class="card-title text-info">Origem: China<br>Temperatura ambiente: 0 a 1º C</h5> 
+                                <div class="text-center my-4"> 
+                                    <a href="#" class="btnn btnn-warning">Comprar</a> 
+                                </div>
+                                <div class="clearfix mb-1"> 
+                                    <span class="float-end">
+                                    <a href="info.html" class="small text-info text-decoration-none">Saiba +</a>
+                                    </span>
+                                    <span class="float-start">
+                                        <p class="small text-muted">Embalado: 10-01-23</p>
+                                    </span> 
+                                </div>  
+                            </div> 
+                    </div> 
+                </div>
+                <div class="col"> 
+                    <div class="card h-100 shadow-sm"> 
+                        <img src="./img/frutas/maça1.jpg" class="card-img-top" alt="...">
+                        <div class="label-top shadow-sm">Kg</div>
+                            <div class="card-body"> 
+                                <div class="clearfix mb-3"> 
+                                    <span class="float-start badge rounded-pill bg-primary">Maçã</span> 
+                                    <span class="float-end price-hp">Kz: 1450.00</span> 
+                                </div> 
+                                <h5 class="card-title text-info">Origem: Ásia<br>Temperatura ambiente: 7,2º C</h5> 
+                                <div class="text-center my-4"> 
+                                    <a href="#" class="btnn btnn-warning">Comprar</a> 
+                                </div>
+                                <div class="clearfix mb-1"> 
+                                    <span class="float-end">
+                                   <a href="info.html" class="small text-info text-decoration-none">Saiba +</a>
+                                    </span>
+                                    <span class="float-start">
+                                        <p class="small text-muted">Embalado: 10-01-23</p> 
+                                    </span> 
+                                </div>  
+                            </div> 
+                    </div> 
+                </div>
+                <div class="col"> 
+                    <div class="card h-100 shadow-sm"> 
+                        <img src="./img/frutas/pitaia2.jpg" class="card-img-top" alt="..."> 
+                            <div class="label-top shadow-sm">Kg</div>
+                            <div class="card-body"> 
+                                <div class="clearfix mb-3"> 
+                                    <span class="float-start badge rounded-pill bg-primary">Pitaia</span> 
+                                    <span class="float-end price-hp">Kz: 1103.00</span> 
+                                </div> 
+                                <h5 class="card-title text-info">Origem: América Central e México<br>Temperatura ambiente: 18 a 2º C</h5> 
+                                <div class="text-center my-4"> 
+                                    <a href="#" class="btnn btnn-warning">Comprar</a> 
+                                </div>
+                                <div class="clearfix mb-1"> 
+                                    <span class="float-end">
+                                        <a href="info.html" class="small text-info text-decoration-none">Saiba +</a>
+                                    </span>
+                                    <span class="float-start">
+                                        <p class="small text-muted">Embalado: 10-01-23</p>
+                                    </span> 
+                                </div>  
+                            </div> 
+                    </div> 
+                </div>
+                <div class="col"> 
+                    <div class="card h-100 shadow-sm"> 
+                        <img src="./img/frutas/Melão-2.jpg" class="card-img-top" alt="...">
+                        <div class="label-top shadow-sm">Kg</div> 
+                            <div class="card-body"> 
+                                <div class="clearfix mb-3"> 
+                                    <span class="float-start badge rounded-pill bg-primary">Melão</span> 
+                                    <span class="float-end price-hp">Kz: 1345.00</span> 
+                                </div> 
+                                <h5 class="card-title text-info">Origem: Oriente Médio<br>Temperatura ambiente: 25 a 30º C</h5> 
+                                <div class="text-center my-4"> 
+                                    <a href="#" class="btnn btnn-warning">Comprar</a> 
+                                </div>
+                                <div class="clearfix mb-1"> 
+                                    <span class="float-end">
+                                        <a href="info.html" class="small text-info text-decoration-none">Saiba +</a>
+                                    </span>
+                                    <span class="float-start">
+                                        <p class="small text-muted">Embalado: 10-01-23</p>
+                                    </span> 
+                                </div>  
+                            </div> 
+                    </div> 
+                </div>
+                <div class="col"> 
+                    <div class="card h-100 shadow-sm"> 
+                        <img src="./img/frutas/coco1.jpg" class="card-img-top" alt="...">
+                        <div class="label-top shadow-sm">Kg</div> 
+                            <div class="card-body"> 
+                                <div class="clearfix mb-3"> 
+                                    <span class="float-start badge rounded-pill bg-primary">Coco</span> 
+                                    <span class="float-end price-hp">Kz: 1500.00</span> 
+                                </div> 
+                                <h5 class="card-title text-info">Origem: Ásia (Índia)<br>Temperatura ambiente: 27º C</h5> 
+                                <div class="text-center my-4"> 
+                                    <a href="#" class="btnn btnn-warning">Comprar</a> 
+                                </div>
+                                <div class="clearfix mb-1"> 
+                                    <span class="float-end">
+                                        <a href="info.html" class="small text-info text-decoration-none">Saiba +</a>
+                                    </span>
+                                    <span class="float-start">
+                                        <p class="small text-muted">Embalado: 10-01-23</p>
+                                    </span> 
+                                </div>  
+                            </div> 
+                    </div> 
+                </div>
+                <div class="col"> 
+                    <div class="card h-100 shadow-sm"> 
+                        <img src="./img/frutas/maracujá1.jpg" class="card-img-top" alt="...">
+                        <div class="label-top shadow-sm">Kg</div> 
+                            <div class="card-body"> 
+                                <div class="clearfix mb-3"> 
+                                    <span class="float-start badge rounded-pill bg-primary">Maracujá</span> 
+                                    <span class="float-end price-hp">Kz: 999.00</span> 
+                                </div> 
+                                <h5 class="card-title text-info">Origem: Europa<br>Temperatura ambiente: 20 a 32º C</h5> 
+                                <div class="text-center my-4"> 
+                                    <a href="#" class="btnn btnn-warning">Comprar</a> 
+                                </div>
+                                <div class="clearfix mb-1"> 
+                                    <span class="float-end">
+                                        <a href="info.html" class="small text-info text-decoration-none">Saiba +</a>
+                                    </span>
+                                    <span class="float-start">
+                                        <p class="small text-muted">Embalado: 10-01-23</p>
+                                    </span> 
+                                </div>  
+                            </div> 
+                    </div> 
+                </div>
+                <div class="col"> 
+                    <div class="card h-100 shadow-sm"> 
+                        <img src="./img/frutas/papaia1.jpg" class="card-img-top" alt="...">
+                        <div class="label-top shadow-sm">Kg</div> 
+                            <div class="card-body"> 
+                                <div class="clearfix mb-3"> 
+                                    <span class="float-start badge rounded-pill bg-primary">Papaia (Mamão)</span> 
+                                    <span class="float-end price-hp">Kz: 890.00</span> 
+                                </div> 
+                                <h5 class="card-title text-info">Origem: América Central e México<br>Temperatura ambiente: Tropical</h5> 
+                                <div class="text-center my-4"> 
+                                    <a href="#" class="btnn btnn-warning">Comprar</a> 
+                                </div>
+                                <div class="clearfix mb-1"> 
+                                    <span class="float-end">
+                                        <a href="info.html" class="small text-info text-decoration-none">Saiba +</a>
+                                    </span>
+                                    <span class="float-start">
+                                        <p class="small text-muted">Embalado: 10-01-23</p>
+                                    </span> 
+                                </div>  
+                            </div> 
+                    </div> 
+                </div>
+                <div class="text-center my-5">
+                    <a href="maisfrutas.html" class="btnn btnn-warning">+ Frutas</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- NOSSOS SERVIÇOS -->
+    <hr class="hr">
+    <h1 class="text-center display-4 fw-medium text-success-emphasis">Nossos Serviços</h1>
+    <hr class="hr">
+    <section class="row justify-content-sm-center fundo_servicos" id="nossoservicos">
+            <div class="servico_corpo">
+                <div class="servico col-sm-5 col-md-3">
+                    <img src="./img/serviço/delivery1.png" alt="Entregas" class="servico_img" id="entrega">
+                    <h3 class="servico_titulo">Entregas</h3>
+                    <p class="servico_descricao">
+                        Os <strong>nossos serviços de entregas</strong> compreende todos os processos envolvidos no transporte e movimentação de produtos e mercadorias da nossa empresa, desde o planeamento de rotas de <b>entrega</b> até a chegada do produto nas mãos do consumidor.
+                    </p>
+                </div>
+                <div class="servico col-sm-5 col-md-3">
+                    <img src="./img/serviço/arbor1.jpg" alt="Arborização" class="servico_img" id="arvore">
+                    <h3 class="servico_titulo">Arborização</h3>
+                    <p class="servico_descricao">
+                        Temos o serviço de <strong>Arborização</strong> pois visa a mesma proporciona às cidades inúmeros <strong>benefícios</strong> relacionados à estabilidade climática, ao conforto ambiental, na melhoria da qualidade do ar, bem como a saúde física e mental da população, além de influenciar na redução da poluição. 
+                    </p>
+                </div>
+                <div class="servico col-sm-5 col-md-3">
+                    <img src="./img/serviço/jardinagem1.jpg" alt="Jardinagem" class="servico_img" id="jardim">
+                    <h3 class="servico_titulo">Jardinagem</h3>
+                    <p class="servico_descricao">
+                        Com a <strong>Jardinagem</strong>  realizamos implantação, criação e manutenção de jardins, podamos árvores, cuidadamos de flores de ambiente interno e externo e corte de grama. Aplicamos defensivos agrícolas contra insectos e pragas em árvores e plantas para a extinção. 
+                    </p>
+                </div>
+            </div>
+    </section>
+    <hr class="hr">
+    <!-- SOBRE NÓS -->
+    <h1 class="text-center display-4 fw-medium text-success-emphasis" id="sobrenos">Sobre Nós</h1>
+    <hr class="hr">
+    <section class="container mt-5">
+        <div>
+            <div class="row justify-content-center">
+                <div class="text-center col-md-4">
+                    <h1 class="display-4">Loja de Frutas Online</h1>
+                    <p class="lead"><strong><i>Existimos para servir a si!</i></strong></p>                
+                </div>
+                    <p class="text-justify col-md-8">
+                    Nós existimos por tua causa, pois pretendemos dispor aos nossos clientes o melhor da natureza em suas mesas para uma dieta sadia e equilibrada mediante o consumo de frutas!
+                    Temos um compromisso com a natureza, com o país e com os nossos clientes.
+                    Uma equipa voltada para a sua saúde alimentícia oferecendo frutas do nosso mercado nacional e internacional aos nossos clientes.
+                    </p>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid bg-light" id="contactos">
+        <div class="row justify-content-end">
+            <div class="col-sm-4">
+                <h4 class="text-left">Estamos Nas Redes Sociais</h4>
+                <div class="btn-group-horizontal btn-row w-10" role="group">
+                    <a href="#" class="btn btn-outline-primary">Facebook</a>
+                    <a href="#" class="btn btn-outline-success">WhatsApp</a>
+                    <a href="#" class="btn btn-outline-warning">SnapChat</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="container-fluid bg-light">
+        <div class="footer">
+            <div>
+                <h4 class="footer_esquerdo text-uppercase text-dark">Existimos para servir a si!</h4>
+            </div>
+            <div>
+                <h2 class="footer_direito"><a href="#" class="nav-link text-uppercase text-success">Loja de Frutas Online</a></h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 mt-3">
+                <blockquote class="blockquote text-center">
+                    <p>Todos os Direitos Reservados</p>
+                    <div class="blockquote-footer">Copyright-2023 <cite>Loja de Frutas Online</cite></div>
+                </blockquote>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

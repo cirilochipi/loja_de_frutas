@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registo de Clientes</title>
+        <link rel="icon" href="./img/icon/tab_client_icon-icons.com_72436.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <link rel="stylesheet" href="./flexbox.css">
+    </head>
+<!-- CORPO DA PÁGINA -->
+    <body>
+        <!--MENU PRINCIPAL-->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><img src="./img/icon/fruits_96835.png">Frutas Online</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Página Inicial</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Nosso Pomar</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Serviços</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#entrega">Entregas ao Domicílio</a></li>
+                                    <li><a class="dropdown-item" href="#arvore">Arborização</a></li>
+                                    <li><a class="dropdown-item" href="#jardim">Jardinagem</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contactos">Contactos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Sobre Nós</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Pesquise pela fruta" aria-label="Pesquisar">
+                            <button class="btn btn-outline-light" type="submit">Pesquisar</button>
+                        </form>
+                    </div>             
+                </div>
+            </nav>
+        </header>
+    <hr class="hr my-3">
+    <!-- REGISTO -->
+        <h1 class="text-center display-4 fw-medium text-success-emphasis" id="">Formulário de Registo</h1>
+    <hr class="hr my-3">
+    <!-- CAMPOS DE REGISTO -->
+    <form class="my-0 p-4 row g-3">
+        <div class="">
+            <div class="row justify-content-center">
+               <div class="col-md-3 my-2">
+                    <label for="validationDefault01" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="validationDefault01" placeholder="Primeiro Nome" required>
+                </div>
+                <div class="col-md-3 my-2">
+                    <label for="validationDefault02" class="form-label">Sobrenome</label>
+                    <input type="text" class="form-control" id="validationDefault02" placeholder="Último Nome" required>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 my-2">
+                    <label for="validationDefaultUsername" class="form-label">Endereço de email</label>
+                    <input type="email" class="form-control" id="validationDefaultUsername" placeholder="nome@exemplo.com" required>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-3 my-2">
+                    <label for="validationDefault03" class="form-label">Contacto Principal</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">+244</div>
+                            </div>
+                            <input type="tel" class="form-control" id="validationDefault03" placeholder="Ex.:123456789" required>
+                        </div>
+                </div>
+                <div class="col-md-3 my-2">
+                    <label for="validationDefault04" class="form-label">Contacto Alternativo</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">+244</div>
+                        </div>
+                        <input type="tel" class="form-control" id="validationDefault04" placeholder="Ex.:123456789" required>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                    <div class="col-md-3 my-2">
+                        <label for="validationDefault05" class="form-label">Província</label>
+                        <select id="validationDefault05" class="form-control custom-select mr-sm-3" required>
+                            <option selected>Selecione...</option>
+                            <option>Cabinda</option>
+                            <option>Benguela</option>
+                            <option>Huambo</option>
+                            <option>Luanda</option>
+                            <option>Lunda-Norte</option>
+                            <option>Lunda-Sul</option>
+                            <option>Móxico</option>
+                            <option>Namibe</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 my-2">
+                        <label for="validationDefault06" class="form-label">Município</label>
+                        <input type="text" class="form-control" id="validationDefault06" placeholder="Ex.: Luanda" required>
+                    </div>
+            </div>
+            <div class="row justify-content-center">
+                    <div class="col-md-3 my-2">
+                        <label for="validationDefault07" class="form-label">Morada</label>
+                        <div>
+                            <input type="text" class="form-control mb-1" id="validationDefault07" placeholder="Ex.: Bairro Kinaxixi" required>
+                        </div>
+                        <div>
+                            <input type="text" class="form-control my-1" id="validationDefault07" placeholder="Rua" required>
+                        </div>
+                        <div>
+                            <input type="text" class="form-control my-1" id="validationDefault07" placeholder="Nº da casa" required>
+                        </div>
+                    </div>
+                    <div class="col-md-3 my-2">
+                        <label for="inputMorada2" class="form-label">Morada 2</label>
+                        <div>
+                            <input type="text" class="form-control mb-1" id="bairro2" placeholder="Ex.: Bairro Maculusso">
+                        </div>
+                        <div>
+                            <input type="text" class="form-control my-1" id="rua2" placeholder="Rua">
+                        </div>
+                        <div>
+                            <input type="text" class="form-control my-1" id="numerocasa2" placeholder="Nº da casa">
+                        </div>
+                    </div>
+            </div>
+        </div>
+        
+        <div class="row justify-content-sm-center my-2">
+                <div class="w-50">
+                    <input class="check-input" type="checkbox" value="" id="invalidCheck2" required>
+                    <label class="check-label" for="invalidCheck2">
+                        Concordo em partilhar os meus dados
+                    </label>
+                </div>
+        </div>
+        <div class="row justify-content-sm-center">
+            <button class="btn btn-primary w-50" type="submit">Registar</button>
+        </div>
+    </form>
+    <!-- Nossos Contactos -->
+    <section class="container-fluid bg-light" id="contactos">
+        <div class="row justify-content-end">
+            <div class="col-sm-4">
+                <h4 class="text-left">Estamos Nas Redes Sociais</h4>
+                <div class="btn-group-horizontal btn-row w-10" role="group">
+                    <a href="#" class="btn btn-outline-primary">Facebook</a>
+                    <a href="#" class="btn btn-outline-success">WhatsApp</a>
+                    <a href="#" class="btn btn-outline-warning">SnapChat</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Nosso Rodapé -->
+    <footer class="container-fluid bg-light">
+        <div class="footer">
+            <div>
+                <h4 class="footer_esquerdo text-uppercase text-dark">Existimos para servir a si!</h4>
+            </div>
+            <div>
+                <h2 class="footer_direito"><a href="index.html" class="nav-link text-uppercase text-success">Loja de Frutas Online</a></h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 mt-3">
+                <blockquote class="blockquote text-center">
+                    <p>Todos os Direitos Reservados</p>
+                    <div class="blockquote-footer">Copyright-2023 <cite>Loja de Frutas Online</cite></div>
+                </blockquote>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    </body>
+</html>
